@@ -1,0 +1,78 @@
+<table class="table_email">
+	<tr>
+		<td class="td_banner_footer">
+			<img class="img_banner_footer" src="assets/img/banner.png" width="100%">
+		</td>
+	</tr>
+    <tr>
+        <td id="table_content">
+            <table>
+                <tr>
+                    <td class="name">{{ data.contratante }},</td>
+                </tr>
+                <tr>
+                    <td class="td_lines">En <span class="red_salud">Global Red Salud</span> premiamos tu preferencia y confianza, por ello, por la compra de tu plan de salud cuentas con el siguiente servicio gratuito:</td>
+                </tr>
+                <tr>
+                    <td class="dotted_line td_lines">
+                        <span class="label">Campaña:</span> {{data.plan}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dotted_line td_lines">
+                        <span class="label">Descripción de la oferta del mes:</span> {{ data.descripcion }}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dotted_line td_lines">
+                        <span class="label">Validez de la campaña:</span> desde el día siguiente de la afiliación hasta 30 días posteriores.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="table_img">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td style="background-color: rgba(244,248,252,255); border-radius: 15px; width: 100%; height: 163px;">
+                                    <table style="width: 100%;border-collapse: collapse;">
+                                        <tr>
+                                            <td class="logo_icon" style="vertical-align: center;">
+                                                <img style="width:100%" src="assets/img/icono.png">
+                                            </td>
+                                            <td class="td_texto">
+                                                <span class="cuadro_texto">
+                                                    Recuerda que este servicio es brindado por <strong>Health
+                                                    Care Administration Red Salud S.A.C.</strong> y para su uso,
+                                                    deberás comunicarte al <strong>WhatsApp 924 843 520 o a
+                                                    la central telefónica (01) 445-3019 opción2.</strong>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="text-align: center;">
+                                                <img src="assets/img/logo-red.png">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td_condition_title"><span class="label">Condiciones de la campaña</span></td>
+                </tr>
+                <tr>
+                    <td class="td_condition_info">{{ data.coberturas }}</td>
+                </tr>
+            </table> 
+        </td>
+    </tr>
+
+    <tr>
+		<td class="td_banner_footer">
+			<img class="img_banner_footer" src="assets/img/footer.png" width="100%">
+		</td>
+	</tr>
+</table>
